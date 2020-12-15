@@ -1,0 +1,242 @@
+* {
+  font-family: 'Abel', sans-serif;
+}
+
+.photo {
+  margin: 0px 0px 0px 55px;
+  padding: 40px 40px;
+  max-width: 43%;
+}
+
+div {
+  padding: 20px;
+  margin: 20px;
+  align-items: center;
+}
+
+body {
+    font-family: sans-serif;
+    color: #000;
+    background: #F5F9FA;
+    margin: 0px;
+}
+img {
+    max-width: 100%;
+    margin: 10px;
+    box-shadow: 10px 10px rgba(0, 0, 0, .10);
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  padding-left: 2em;
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  padding-top: 40px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+header {
+  display: flex;
+  background: #191A19;
+  padding: 2rem;
+  justify-content: space-between;
+  margin: 0px;
+  align-items: center;
+  font-size: 1.5rem;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0px;
+}
+
+nav ul li {
+  margin: 0px 10px;
+  margin-left: 3rem;
+  font-size: 1.7rem;
+}
+
+#robert {
+  padding-left: 30px;
+}
+
+footer {
+  background: #191A19;
+  padding: 40px;
+  color:#fff;
+}
+
+footer p {
+  text-align: center;
+  color: #fff;
+  margin: 0;
+}
+
+footer a {
+  color: #9FEEFE;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+nav ul li a {
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: transparent;
+}
+
+nav ul li a:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 0;
+  height: 0;
+  border: 2px solid transparent;
+}
+
+nav ul li a:hover:before {
+  animation: animate 1s linear forwards;
+}
+
+@keyframes animate {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: #fff;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  50% {
+    width: 100%;
+    height: 0;
+    border-top-color: #fff;
+    border-right-color: #fff;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: #fff;
+    border-right-color: #fff;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+}
+
+nav ul li a:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 0;
+  height: 0;
+  border: 2px solid transparent;
+}
+
+nav ul li a:hover:after {
+  animation: animate2 1s linear forwards;
+  animation-delay: 1s;
+}
+
+@keyframes animate2 {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #fff;
+  }
+  50% {
+    width: 0%;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #fff;
+    border-left-color: #fff;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #fff;
+    border-left-color: #fff;
+  }
+}
+
+#container a {
+  position: relative;
+  padding: 5px 20px;
+  display:inline-block;
+  margin-top: 5px;
+  margin-left: 25px;
+  text-decoration: none;
+  color: #fff;
+  background: #111;
+}
+
+
+#container {
+    max-width: 1280px; /* keep */
+    margin: auto; /* keep */
+    display: grid; /* keep */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        "moose ground "
+        "otter bear"
+        "sealion hare"
+}
+
+
+
+@media screen and (max-width: 550px) {
+  #container {
+    padding: 15px;
+    margin: 0;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+    "moose"
+    "ground"
+    "otter"
+    "bear"
+    "sealion"
+    "hare"
+  }
+  header {
+    padding: 0;
+    font-size: 1em;
+  }
+  nav ul li {
+    margin: 0;
+    font-size: 1rem;
+  }
+  h1 {
+    display: none;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+    text-align: left;
+  }

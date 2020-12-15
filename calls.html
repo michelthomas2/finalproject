@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Animal Calls </title>
+	<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+	<link href="css/calls.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+
+    <h1>Animal Calls</h1>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="calls.html">Animal Calls</a></li>
+        <li><a href="safety.html">Saftey Tips</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+<h3> Click the images below to hear the call of that animal! </h3>
+
+<div id="container">
+<div id="moose">
+	<h2> Moose Call </h2>
+	<img src="images/mooseCU.JPG" alt="Close up of a female moose" id="moosepic" onclick = "playAudio(moose)">
+	<a href="https://www.youtube.com/watch?v=7DbSiqeyDc0">Sound Source</a>
+</div>
+
+<div id="ground">
+	<h2>Arctic Ground Squirrel Call </h2>
+	<img src="images/GSscream.JPG" alt="Picture of a ground squirrel with its mouth open" onclick = "playAudio(ground)">
+	<a href="https://www.nps.gov/media/video/view.htm?id=0E2C6F66-CDBE-449A-CFD9D68C6AC30F30">Sound Source</a>
+</div>
+
+<div id="otter">
+	<h2> Sea Otter Call </h2>
+	<img src="images/otterscream.JPG" alt="Picture of an otter in water" onclick = "playAudio(otter)">
+	<a href="https://www.youtube.com/watch?v=dHyadiNekok">Sound Source</a>
+</div>
+
+	<div id="bear">
+		<h2> Bear Call </h2>
+		<img src="images/brownbear2.jpg" alt="Picture of a brown bear" onclick = "playAudio(bear)">
+	<p>	<a href="https://www.youtube.com/watch?v=cHT0KOFyAkg">Sound Source </a>  <a href="https://commons.wikimedia.org/wiki/File:Kamchatka_Brown_Bear_near_Dvuhyurtochnoe_on_2015-07-23.jpg">Photo Source</a></p>
+<p id="robert"> Photo by Robert F. Tobler. </p>
+	</div>
+
+	<div id="sealion">
+		<h2> Steller Sea Lion Call </h2>
+		<img src="images/sealions.JPG" alt="Picture of a group of sea lions" onclick = "playAudio(lion)">
+		<a href="https://www.youtube.com/watch?v=LJK2flCdQxE">Sound Source</a>
+	</div>
+
+	<div id="hare">
+		<h2> Snowshoe Hare Call </h2>
+		<img src="images/hare2.JPG" alt="Picture of a Snowshoe Hare" onclick = "playAudio(hare)">
+		<a href="https://www.youtube.com/watch?v=S83hCpKBgeQ">Sound Source</a>
+	</div>
+
+</div>
+
+	<audio id="moosecall" preload="auto" >
+		<source src="audio/moosesound.mp3" type="audio/mp3">
+		<source src="audio/moosesound.ogg" type="audio/ogg">
+	</audio>
+
+	<audio id="bearcall" preload="auto" >
+		<source src="audio/bearsound.mp3" type="audio/mp3">
+			<source src="audio/bearsound.ogg" type="audio/ogg">
+	</audio>
+
+	<audio id="ottercall" preload="auto" >
+		<source src="audio/ottersound.mp3" type="audio/mp3">
+			<source src="audio/ottersound.ogg" type="audio/ogg">
+	</audio>
+
+	<audio id="groundcall" preload="auto" >
+		<source src="audio/groundsound.mp3" type="audio/mp3">
+			<source src="audio/groundsound.ogg" type="audio/ogg">
+	</audio>
+
+	<audio id="lioncall" preload="auto" >
+		<source src="audio/lionsound.mp3" type="audio/mp3">
+			<source src="audio/lionsound.ogg" type="audio/ogg">
+	</audio>
+
+	<audio id="harecall" preload="auto" >
+		<source src="audio/haresound.mp3" type="audio/mp3">
+			<source src="audio/haresound.ogg" type="audio/ogg">
+	</audio>
+
+	<footer>
+  	<p>This page is an assignment for the University of Florida course <b>Introduction to Web Apps</b>.</p>
+		<p> Some code for this page based on tutorials by <a href="https://www.youtube.com/watch?v=snhpoxtLugU&t=12s"> Online Tutorials </a> and
+			<a href="https://www.youtube.com/watch?v=JAdIgiGA0Lk&t=302s"> Effective Code Academy</a>. </p>
+  </footer>
+	<script src="js/calls.js"> </script>
+
+</body>
+</html>
